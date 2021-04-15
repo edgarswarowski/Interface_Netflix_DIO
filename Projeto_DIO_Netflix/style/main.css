@@ -1,0 +1,122 @@
+/* DECLARACAO DE VARIAVEIS NO CSS. CORES PADRAO DO SITE PARA NAO PRECISAR TROCAR EM TODO DOCUMENTO NO FUTURO*/
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*RESET CSS*/
+
+/*BASE*/
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/*VAI MOSTRAR MENU EM INHA*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+/*VAI MOSTRAR MENU EM INHA*/
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/* QUANDO MOUSE PASSA POR CIMA DO TEXTO, TEXTO MUDA COR*/
+header nav a:hover{
+    color: #fff;
+}
+/* QUANDO MOUSE PASSA POR CIMA DO TEXTO, TEXTO MUDA COR*/
+
+/*BASE*/
+/*FILME PRINCIPAL*/
+
+.filme-principal{
+    font-size: 16px;
+    /*APLICAR CONTRASTE GRADIENTE NA IMAGEM, PARA VISUALIZAR MELHOR O TEXTO*/
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/img/dark_capa.jpg");
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 25%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+/*FILME PRINCIPAL*/
+
+/*CARROSSEL*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+/*CARROSSEL*/
